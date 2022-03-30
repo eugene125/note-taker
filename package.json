@@ -1,0 +1,23 @@
+{
+  "name": "note-taker",
+  "version": "1.0.0",
+  "description": "[Description](#description)\r [Objectives](#objectives)\r [Installation](#installation)\r [Usage](#usage)\r [Screenshots](#screenshots)\r [Contributors](#contributors)\r [Technologies Used](#technologies-used)\r [Links](#links)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eugene125/note-taker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eugene125/note-taker/issues"
+  },
+  "homepage": "https://github.com/eugene125/note-taker#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
