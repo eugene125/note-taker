@@ -30,6 +30,14 @@ app.post("/api/notes", (req, res) => {
     res.send(JSON.stringify(req.body));
 })
 
+app.delete("/api/notes/:id", (req, res) => {
+    let json = fs.readFileSync("./develop/db/db.json", "utf-8");
+    let dB = JSON.parse(json);
+    dB = dB.filter(i => i.id != req.params.id)
+    fs.writeFileSync("./develop/db/db.json", JSON.stringify(dB));
+    res.send(req.params.id);
+})
+
 app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
